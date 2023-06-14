@@ -1,0 +1,99 @@
+i am trying to practice the github from lap and ===>
+
+srisa@LAPTOP-1A5TJ9DP MINGW64 ~/Desktop
+$ git config --global user.name "Jeevith-U"
+
+srisa@LAPTOP-1A5TJ9DP MINGW64 ~/Desktop
+$ git config --global user.email jeevith367@gmail.com
+
+srisa@LAPTOP-1A5TJ9DP MINGW64 ~/Desktop
+$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+srisa@LAPTOP-1A5TJ9DP MINGW64 ~/Desktop
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Jeevith-U
+user.email=jeevith367@gmail.com
+
+srisa@LAPTOP-1A5TJ9DP MINGW64 ~/Desktop
+$ pwd
+/c/Users/srisa/Desktop
+
+srisa@LAPTOP-1A5TJ9DP MINGW64 ~/Desktop
+$ mkdir git_test
+
+srisa@LAPTOP-1A5TJ9DP MINGW64 ~/Desktop
+$ cd git_test
+
+srisa@LAPTOP-1A5TJ9DP MINGW64 ~/Desktop/git_test
+$ git init
+Initialized empty Git repository in C:/Users/srisa/Desktop/git_test/.git/
+
+srisa@LAPTOP-1A5TJ9DP MINGW64 ~/Desktop/git_test (master)
+$
+srisa@LAPTOP-1A5TJ9DP MINGW64 ~/Desktop/git_test (master)
+$ ^C
+
+srisa@LAPTOP-1A5TJ9DP MINGW64 ~/Desktop/git_test (master)
+$ ^C
+touch alpha.txt
+
+srisa@LAPTOP-1A5TJ9DP MINGW64 ~/Desktop/git_test (master)
+$ notepad alpha.txt
